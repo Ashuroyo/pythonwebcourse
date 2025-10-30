@@ -662,6 +662,16 @@ function setupMobileEnhancements() {
     }
 }
 
+function openTermsModal() {
+    document.getElementById('termsModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closeTermsModal() {
+    document.getElementById('termsModal').classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+
 // Initialize mobile enhancements
 setupMobileEnhancements();
 
@@ -670,3 +680,4 @@ window.scrollToSection = scrollToSection;
 window.openContactForm = openContactForm;
 window.toggleFAQ = toggleFAQ;
 window.closeModal = closeModal;
+
