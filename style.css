@@ -1416,7 +1416,7 @@ html {
 
 .faq-answer {
   display: block;              /* ensures scrollHeight works */
-  max-height: 0;               
+  max-height: 0;               /* default height */
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
   padding: 0 var(--space-16);  
@@ -1771,4 +1771,18 @@ html {
 .error {
   border-color: var(--color-error);
   background-color: rgba(var(--color-error-rgb), 0.1);
+}
+
+.missing-feature {
+    color: #a0a0a0; /* Gray out */
+    opacity: 0.6;
+}
+.red-x {
+    color: #e53e3e; /* Red for X */
+    margin-right: var(--space-4);
+}
+.upgrade-gap {
+    margin-top: var(--space-8);
+    text-align: center;
+    color: var(--color-accent);
 }
